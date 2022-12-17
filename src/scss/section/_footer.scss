@@ -1,0 +1,41 @@
+/* section Footer start __________________________________*/
+.footer {
+  padding: 15px 15px;
+  background-color: #f0651e;
+}
+
+.footer__box {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  margin-bottom: 0;
+  margin: 0 15px 0 0;
+}
+
+.footer__link {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.footer__link:hover {
+  color: #000;
+}
+
+.footer__logo {
+  max-width: 100px;
+  width: 100%;
+}
+
+.footer__logo-img {
+  max-width: 100px;
+}
+/* section Footer end __________________________________*/

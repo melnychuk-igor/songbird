@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Songbird</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="index.html">Головна</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="game.html">Вікторина</a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link_active"
+                href="gallery.html"
+                >Галерея</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="logo header__logo" href="index.html"
+          ><h1 class="logo__text">Songbird</h1></a
+        >
+        <div class="burger">
+          <svg
+            data-v-4d5437cc=""
+            width="41"
+            height="42"
+            viewBox="0 0 41 42"
+            xmlns="http://www.w3.org/2000/svg"
+            class="Header-menuIcon menu-icon AppSvg-component"
+          >
+            <path
+              d="M26 14.0012H8C-1.00025 14.0011 -3.59882 -1.1629 15.4997 1.6457C32.4998 4.14571 41.4999 6.14566 38.9999 23.6458C37.1888 36.3233 27.5001 29.9989 26 29L8 13"
+            ></path>
+            <path
+              d="M25.8687 28.0076H7.86866C-1.1316 28.0077 -3.73016 43.1717 15.3683 40.3631C32.3685 37.8631 41.3685 35.8631 38.8685 18.363C37.0575 5.68547 27.5001 12.0011 26 13L7.86866 29"
+            ></path>
+            <path d="M26 21H8"></path>
+          </svg>
+        </div>
+        <div class="header__btns-lang">
+          <img class="header__btn-lang header__btn-lang_active header__lang-ukraine" src="img/ukraine.png" alt="flag ukraine">
+          <img class="header__btn-lang header__lang-english" src="img/united-kingdom.png" alt="flag english">
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-gallery">
+      <section class="gallery">
+        <h2 class="gallery__title h2-title">Gallery</h2>
+        <div class="gallery__list">
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49298804222_474cfe8682.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Ворон</h3>
+                <p class="gallery__item-kind">Corvus corax</p>
+                <p class="gallery__item-text">
+                  Ворон - великий птах. Довжина тіла досягає 70 сантиметрів, розмах крил – до півтора метра. Ворони населяють околиці Тауера. В Англії існує повір'я, що в день, коли чорні ворони відлетять від Тауера, монархія впаде.
+                </p>
+              </div>
+              <div
+                class="gallery__item-audio audio"
+                data-sound="https://www.xeno-canto.org/sounds/uploaded/XIQVMQVUPP/XC518684-Grands%20corbeaux%2009012020%20Suzon.mp3"
+              >
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/49221158846_b0b69a58f1.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Журавель</h3>
+                <p class="gallery__item-kind">Grus grus</p>
+                <p class="gallery__item-text">
+                  Звуки, що видаються журавлем, схожі на дзвінке "кур-ли - кур-ли". Журавлі найчастіше співають дуетом – один птах починає заспівати зі складу «кур», а другий підхоплює «ли». Якщо птах співає один, він видає лише звук «кур».
+                </p>
+              </div>
+              <div
+                class="gallery__item-audio audio"
+                data-sound="https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC512582-190604_1087_Grus_tok.mp3"
+              >
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//48539007512_5029d2a9a0.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Ластівка</h3>
+                <p class="gallery__item-kind">Delichon urbicum</p>
+                <p class="gallery__item-text">
+                  Для ластівок характерно тихе щебетання. Пісні ластівок не змовкають протягом усього літа. Дослідники розрізняють у птахів до 6 звуків, що щебечуть: «віт», «ві-віт», «чівіт», «чиривіт» і т.п. Ластівки люблять співати дуетом.
+                </p>
+              </div>
+              <div
+                class="gallery__item-audio audio"
+                data-sound="https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC489247-190724_09.10h_huiszwaluw_biesbosch_amaliahoeve_roep_100%2Bex_fouragerend_gezien_%20%282%29.mp3"
+              >
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/48456345286_dbc8530027.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Козодой</h3>
+                <p class="gallery__item-kind">Caprimulgus europaeus</p>
+                <p class="gallery__item-text">
+                  Козодой – непримітний птах, відомий завдяки своєму голосу. Пісня козодоя звучить як монотонна трель схожа на торохтіння мотоцикла. Таке деренчання чутно від заходу сонця до світанку, його тональність, частота і гучність змінюються.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC486956-190623_22.37h_nachtzwaluw_rechte%20heide_zang_ad%20_2ex_gezien_.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/48377838151_e15f430ec1.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Зозуля</h3>
+                <p class="gallery__item-kind">Cuculus canorus</p>
+                <p class="gallery__item-text">
+                  Зозулю назвали так через особливості її пісень. Дзвінке «ку-ку» не сплутати ні з яким іншим птахом. Зозулі не будують гнізда, їхнє потомство вирощують інші види пернатих, яким зозулі підкидають свої яйця.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501461-190616_08.13h_koekoek_brabantse%20biesbosch%20jantjesplaat_roep_1%20ex_ad%20m_ter%20plaatse%20zingend_gezien_.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49366042493_c48c81d58d.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Синиця</h3>
+                <p class="gallery__item-kind">Parus major</p>
+                <p class="gallery__item-text">
+                  У щебетанні синиць розрізняють понад 40 різних звукових поєднань. Співають вони практично цілий рік, трохи затихаючи лише взимку. Синиці справжні санітари лісу. Одна пара синиць у період гніздування оберігає від шкідників десятки дерев.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC518417-Kj%C3%B8ttmeis%20XC%20Helg%C3%B8ya%20Elias%20A.%20Ryberg20200108133922_079.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49366595303_06cf65b07e.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Горобець</h3>
+                <p class="gallery__item-kind">Passer domesticus</p>
+                <p class="gallery__item-text">
+                  Горобці є найвідомішими і впізнаваними пернатими. Їх легко впізнати по строкатому оперенню і задерикуватому цвіріньканню. Горобці відносяться до синатропного вигляду - вони селяться поблизу людського житла.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/CXFHOPIVAS/XC503224-191020_0134.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49347123322_291c86b016.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Грач</h3>
+                <p class="gallery__item-kind">Corvus frugilegus</p>
+                <p class="gallery__item-text">
+                  Граки дуже розумні та кмітливі птахи. За допомогою дзьоба вони створюють і використовують найпростіші знаряддя. У граків розвинений рефлекс звуки трактора. Почувши «тарахтіння», вони летять на звук – трактор оре землю, отже, тут багато корму.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/RLRHCUIPIY/XC512540-gawron%20Suble%2019.12.19%20%2012.35.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49237149586_993cf685c5.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Галка</h3>
+                <p class="gallery__item-kind">Coloeus monedula</p>
+                <p class="gallery__item-text">
+                  Слово «галка» походить із старослов'янської мови та перекладається як «чорна». Цим словом часто називають воронів чи інших чорних птахів. Латинську назву галки monedula пов'язують зі словами монета за любов птаха до блискучих і яскравих речей.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC510498-Coloeus%20monedula_2019.11.13_11.55_01.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/48979125763_e2534f54bd.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Співочий дрізд</h3>
+                <p class="gallery__item-kind">Turdus philomelos</p>
+                <p class="gallery__item-text">
+                  Дрізд — найкращий співак із загону гороб'їних. Пісня складається лише з гарних звучних свистів та коротких трелів. Найчастіше її можна почути в ранковий та вечірній час. Співають дрізди протягом усього періоду гніздування.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513326-190704_1146_TF-Glogow.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49360363066_ff02bb6a73.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Сорока</h3>
+                <p class="gallery__item-kind">Pica pica</p>
+                <p class="gallery__item-text">
+                  Сорока дуже працьовитий птах. Вона будує до восьми гнізд, а потім вибирає з них найкраще. Вхід у гніздо сорок завжди звернений на південь, щоб у житло було тепліше. Сороки є єдиними птахами, які впізнають себе у дзеркалі.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC500868-Pica%20pica2019.08.23_09.18_02.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49369678956_9a7465c7f4.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Сойка</h3>
+                <p class="gallery__item-kind">Garrulus glandarius</p>
+                <p class="gallery__item-text">
+                  Коли сойка хвилюється, чубчик на її голові скуштує. Птах намагається створити жахливе видовище. Сойки вміють імітувати голоси інших птахів, тварин та звуки, які створює людина. На зиму вони роблять великі запаси жолудів та горіхів.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/TFOGOENSTQ/XC501517-191008_1590%201300.%20Eichelh%C3%A4her%20D%2C%20NW%2C%20LEV.%20Stephan%20Risch.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/49143150817_2d3a2f6c1e.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Зяблік</h3>
+                <p class="gallery__item-kind">Fringilla coelebs</p>
+                <p class="gallery__item-text">
+                  У дикій природі налічується 450 видів зябликів. Взимку зяблики ведуть зграйний спосіб життя. Іноді у їхніх сім'ях можна побачити горобців. Співають зяблики навесні, з настанням шлюбного періоду. Їх спів – це заливні багатохвилинні рулади.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC512407-150622_03%20zi%C4%99ba%20%282%29.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49365470123_f2de66bb35.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Клист</h3>
+                <p class="gallery__item-kind">Loxia curvirostra</p>
+                <p class="gallery__item-text">
+                  Клєстів називають «різдвяними» птахами. У природних умовах вони дають потомство взимку – у січні. Ці птахи утеплюють свої гнізда мохом та шерстю тварин, тому пташенятам не холодно. У пошуках шишок клісти можуть відлітати за 3500 км. від гнізда.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/OTVUCEGYZN/XC495381-Kruisbek%20roep%20NHD%20290619.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/48063004977_84252f9ceb.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Горлиця</h3>
+                <p class="gallery__item-kind">Streptopelia turtur</p>
+                <p class="gallery__item-text">
+                  Горлиця мешкає у змішаних та широколистяних лісах, а також у міських парках та селищах. Птахи часто вибирають місця життя поряд із людиною та легко звикають до людей. Завдяки мелодійному приємному співу горлиць часто розводять у домашніх умовах.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC324106-Turkawka_Streptopelia_turtur_Poland_Jarek_Matusiak_2011625_07.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/49339376578_e933426455.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Дятел</h3>
+                <p class="gallery__item-kind">Dendrocopos major</p>
+                <p class="gallery__item-text">
+                  Дятел – помітний і галасливий птах, часто живе поруч із людиною. З середини січня до кінця червня можна почути «барабанний дріб» дятлів – трель від вібрації гілок під швидкими ударами дзьоба птаха. У хорошу погоду дріб чути у радіусі 1,5 км.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC518928-AB-017%20dzi%C4%99cio%C5%82%20du%C5%BCy%20agresja%20%282%29.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49226383598_6f8be86a06.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Удод</h3>
+                <p class="gallery__item-kind">Upupa epops</p>
+                <p class="gallery__item-text">
+                  Удоди вважають за краще жити на відкритих ландшафтах з окремими деревами або гаями. Найбільш зручними для птиці є лісостеп та савана. Удод може вибирати місця проживання поруч із людиною: пасовища, виноградники, фруктові сади.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC477326-dudek%20%282%29.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//48386150031_7b749df74b.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Стриж</h3>
+                <p class="gallery__item-kind">Apus apus</p>
+                <p class="gallery__item-text">
+                  Стрижа можна побачити практично у кожному куточку планети. Вони живуть як у лісових зонах, і на відкритих місцевостях. Живуть стрижі великими зграями. Великі колонії цих птахів можна побачити у містах чи прибережних скелях.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/TMUAWSDHDJ/XC511871-G.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/47105096764_f751fba568.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Жайворонок</h3>
+                <p class="gallery__item-kind">Alauda arvensis</p>
+                <p class="gallery__item-text">
+                  Жайворонки - перелітні птахи. З початку вересня вони відлітають на південь. Повертаються вони на початку березня, незалежно від того, зійшов сніг чи ні. Після прильоту жайворонків визначали настання весни і пору, коли час орати землю.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC462158-Skowronek_Alauda_arvensis_Poland_Jarek_Matusiak_%20-006%20skowronek%20%282%29.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/7605/27669397735_f3c21758f2.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Соловей</h3>
+                <p class="gallery__item-kind">Luscinia luscinia</p>
+                <p class="gallery__item-text">
+                  Солов'ї співають з початку травня до кінця літа. Кожна пісня соловейка складається з 12 елементів, що повторюються, які ще називають колінами. Окрім власних трелів, солов'ї легко і добре переймають співи інших птахів.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/HILVWSADVL/XC513809-R07_0052%20Thrush%20Nightingale%20Snipe.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/49357593971_9509fe1d7c.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Шпак</h3>
+                <p class="gallery__item-kind">Sturnus vulgaris</p>
+                <p class="gallery__item-text">
+                  Шпаки - перелітні птахи. Синхронний переліт великих зграй шпаків називається мурмурацією. Це гарне явище, що зачаровує, - безліч птахів ніби танцюють у повітрі, утворюючи хитромудрі фігури, які зменшуються і збільшуються в небі.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC515519-2020.01.01_17.24_01.MP3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/47102184004_58a93380b9.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Іволга</h3>
+                <p class="gallery__item-kind">Oriolus oriolus</p>
+                <p class="gallery__item-text">
+                  Мелодічність голосу іволги порівнюють із звучанням флейти. Людині складно розглянути іволгу, оскільки вона мешкає високо на деревах. Іволга не тільки дуже гарний, але й корисний птах. Вона знищує отруйних гусениць, яких не поїдають інші птахи.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC491801-2019.07.07_06.28_01.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49367433842_1b06da0e6b.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Омелюх</h3>
+                <p class="gallery__item-kind">Bombycilla garrulus</p>
+                <p class="gallery__item-text">
+                  У омелюхів дуже чіпкі кігтики, що допомагає птаху утримуватися на гілках і скльовувати ягоди, які найважче дістати. У період догляду самець пропонує самці ягоду або інше частування. Якщо самка його приймає, птахи створюють пару.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC517421-AB-004%20%282%29%20jemio%C5%82uszka.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49366257253_db3ce48b9a.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Щиглик</h3>
+                <p class="gallery__item-kind">Carduelis carduelis</p>
+                <p class="gallery__item-text">
+                  Щиглики співають красиво та мелодійно. І в природі, і в неволі вони щебечуть майже цілий рік. У співі щиглика розрізняють понад 20 переливчастих трелів. Щиглики звикають до людей і навіть можуть повернутися до господаря після того, як їх випустили на волю.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC489265-190724_07.58h_putter_biesbosch_%20boompjes%20langs%20open%20water_zang_1ex_ad_niet%20gezien_.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//4835//43867392960_7105d71e19.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Орел</h3>
+                <p class="gallery__item-kind">Aquila nipalensis</p>
+                <p class="gallery__item-text">
+                  У давнину орел був символом сонця. Орли часто ширяють над землею, при цьому швидкість їх переміщення може досягати 240 км/год. Ілюзія повільного руху відбувається через висоту польоту – понад 700 метрів.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/KTBTZAHSXF/10_Aquila_nipalensis_al02D85.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//48701190276_ee2a9ed594.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Шуліка</h3>
+                <p class="gallery__item-kind">Milvus migrans</p>
+                <p class="gallery__item-text">
+                  Шуліки – великі хижаки, заввишки вони досягають близько півметра, а вага дорослих особин сягає 1 кг. Крила вузькі та довгі, їх розмах становить 1,5 м. Коршуни часто гніздяться великими зграями і навіть утворюють великі колонії.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC485740-2019-06-22%20Selenga%20Milan%20brun%20cris%20de%20quemandage%203.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/4480/37240531151_b74619c99d.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Лунь</h3>
+                <p class="gallery__item-kind">Circus cyaneus</p>
+                <p class="gallery__item-text">
+                  Лунь – це невеликий сокіл. Харчується в основному мишоподібними гризунами, основа його раціону - полівки, хом\'яки, миші. Оперення луня може бути попелясто-сірим. З таким птахом пов\'язане порівняння «сивий, як лунь».
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513498-190709_1175_Cir.cyan-f.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49310710607_92a3a145a9.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Сокіл</h3>
+                <p class="gallery__item-kind">Falco peregrinus</p>
+                <p class="gallery__item-text">
+                  Латинська назва сокола Falco походить від слова серп через серповидну форму крил. Довгі та широкі крила дозволяють соколу високо підніматися у небо та вільно парити. Швидкість польоту сокола сягає 280-320 кілометрів на годину.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC496049-Pilgrimsfalk_06.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//65535//49024617331_b9d0d2c9b3.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Яструб</h3>
+                <p class="gallery__item-kind">Accipiter gentilis</p>
+                <p class="gallery__item-text">
+                  Для всіх яструбів характерні широкі та короткі крила. Ще одна відмітна ознака – білі «брови» над очима. Слов\'янські дружинники розміщували зображення яструба на своїх прапорах як символ відваги, мощі та безжалісності до ворогів.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC512740-Duvh%C3%B6k_09.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/48137123012_393653c2e4.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Пугач</h3>
+                <p class="gallery__item-kind">Bubo bubo</p>
+                <p class="gallery__item-text">
+                  Політ пугача безшумний, зір дуже гострий. Ці особливості роблять птаха неперевершеним нічним мисливцем. У пугача немає природних ворогів, жоден звір не полює на дорослих птахів. А ось на пташенят нападають лисиці та вовки.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/WNLIDKJKXT/XC518386-sense%20t%C3%ADtol.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/7557/16260253965_8e9430cb66.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Альбатрос</h3>
+                <p class="gallery__item-kind">Diomedea exulans</p>
+                <p class="gallery__item-text">
+                  Альбатрос - найбільший літаючий птах у світі. Розмах крил сягає три з половиною, вага – десять кілограмів. Більшість життя альбатроси проводять у повітрі, покриваючи над океанськими просторами величезні відстані.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/WOEAFQRMUD/XC293087-Diomedea%20exulans151120_T254.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/800/40645471394_4422e69ed8.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Сула</h3>
+                <p class="gallery__item-kind">Sula nebouxii</p>
+                <p class="gallery__item-text">
+                  Особливістю голубоногої сулі є не лише насичений яскраво-синій колір лапок, але ще й той факт, що вони дуже теплі. У той час як інші види птахів гріють кладки своїм тілом, блакитнога сула робить це за допомогою лапок.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/YHKQPPJDVP/XC411507-171217_1491%20BF%20Booby%205ft%20IDLP%201230%20mp3%20amp.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com//607//22136056020_935cb113f9.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Буревісник</h3>
+                <p class="gallery__item-kind">Puffinus griseus</p>
+                <p class="gallery__item-text">
+                  Розміри буревісникових різні. Найменші з них у довжину становлять до 25 см, найбільші - до 1 м, при розмаху крил близько 2 м. Існує повір'я, що поява буревісника в повітрі віщує бурю, про що говорить сама назва птаха.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/XQEVNREHJY/SHEARWATER%20Christmas%20Island_04_Motu_Isla%20de%20Pascua-Easter%20Island_CH_4MAR03_Alvaro%20Jaramillo.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="img/pelican.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Пелікан</h3>
+                <p class="gallery__item-kind">Pelecanus</p>
+                <p class="gallery__item-text">
+                  Пелікани - жителі морів та річок. Ходять вони незграбно, але добре літають та плавають. Харчуються в основному рибою, влаштовують колективні полювання - вишикувавшись півколом ляскають по воді крилами і дзьобами і витісняють налякану рибу на мілководді. Пелікани - жителі морів і річок. Ходять вони незграбно, але добре літають та плавають. Харчуються здебільшого рибою, влаштовують колективні полювання — вишикувавшись півколом ляскають по воді крилами і дзьобами і витісняють налякану рибу на мілководді.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/XAMHIHFTZG/XC331138-call1.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/5202/5252413926_8e013a3efd.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Пінгвін</h3>
+                <p class="gallery__item-kind">Aptenodytes forsteri</p>
+                <p class="gallery__item-text">
+                  Самець імператорського пінгвіна досягає зросту 130 см, його маса може наближатися до 50 кг. З усіх сучасних пінгвінів цей вид найбільший. Харчування пінгвіна складається з риби, кальмарів та криля. Полюють птахи в океані великими групами.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC449827-LS100829%20King%20Penguin%20call%20A.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img
+              class="gallery__item-img"
+              src="https://live.staticflickr.com/65535/48577115317_7034201dde.jpg"
+              alt="animal"
+            />
+            <div class="gallery__description">
+              <div class="gallery__item-texts">
+                <h3 class="gallery__item-title">Чайка</h3>
+                <p class="gallery__item-kind">Larus argentatus</p>
+                <p class="gallery__item-text">
+                  Чайки населяють береги морів, озер, річок, водоймищ, боліт, часто гніздяться на островах. З кінця минулого століття чайки почали з'являтися у великих містах, де влаштовують гнізда на дахах будівель. Усі чайки ведуть колоніальний спосіб життя.
+                </p>
+              </div>
+              <div class="gallery__item-audio audio" data-sound="https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501190-190801_06.50h_zilvermeeuw_duinen%20van%20goeree_roep_2ex_overvliegend_gezien_.mp3">
+                <div class="row audio__control">
+                  <button class="audio__btn-play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <div class="audio__wrapper-strip">
+                    <input
+                      class="audio__strip strip strip-music"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                      id="duration_slider"
+                    />
+                    <div class="row">
+                      <p class="audio__time">00:00</p>
+                      <p class="audio__time audio__all-time">01:35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="audio__box-volume">
+                  <p class="audio__value">90</p>
+                  <i
+                    class="fa fa-volume-up"
+                    aria-hidden="true"
+                    id="volume_icon"
+                  ></i>
+                  <input
+                    class="strip strip-volume"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="90"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__box">
+        <p class="footer__text">
+          Copyright © Ігор Мельничук 2022. Усі права захищені.
+          <a
+            class="footer__link"
+            target="_blank"
+            href="https://github.com/melnychuk-igor?tab=repositories"
+            >Github</a
+          >
+        </p>
+        <a class="footer__logo" target="_blank" href="https://rs.school/js/">
+          <img
+            class="footer__logo-img"
+            src="img/rs_school_js.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

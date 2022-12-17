@@ -1,0 +1,76 @@
+/* section Gallery start __________________________________*/
+.main-gallery {
+  max-width: 1100px;
+}
+
+.gallery__title {
+  margin-bottom: 30px;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 45px 30px;
+}
+@media (max-width: 1024px) {
+  .gallery__list {
+    max-width: 700px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .gallery__list {
+    max-width: 350px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery__item {
+  border: 2px solid #f0651e;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  position: relative;
+  height: fit-content;
+}
+
+.gallery__item-img {
+  max-height: 213px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+.gallery__description {
+  padding: 10px 10px 20px;
+}
+
+.gallery__texts {
+  margin-bottom: 15px;
+}
+
+.gallery__item-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery__item-kind {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery__item-text {
+  text-align: justify;
+}
+
+.gallery__item-audio {
+  display: block;
+  margin: 0 auto;
+  max-width: 290px;
+}
+/* section Gallery end __________________________________*/

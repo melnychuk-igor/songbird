@@ -1,0 +1,251 @@
+@import 'section/_normalize';
+
+/* Main style start __________________________________*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 1px;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 0.9px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #222;
+  color: #fff;
+  font-size: 16rem;
+  line-height: 20rem;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+li {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 20rem;
+  padding-left: 45px;
+  position: relative;
+}
+
+li::before {
+  content: '•';
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  width: 1em;
+  position: absolute;
+  left: 18px;
+  font-size: 26rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.h2-title {
+  text-align: center;
+  font-size: 28rem;
+  line-height: 32rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  cursor: pointer;
+  outline: none;
+}
+
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  display: block;
+  border-radius: 0 !important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main {
+  min-height: 100vh;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 75px 15px 125px;
+}
+@media (max-width: 480px) {
+  .main {
+    padding: 50px 15px 100px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn a,
+.btn button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: none;
+  border-left: none;
+  border-radius: 30px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 400px;
+  z-index: 1;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+
+.btn:hover a,
+.btn:hover button {
+  letter-spacing: 3px;
+}
+
+.btn a::before,
+.btn button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translate(0);
+  transition: 0.5s;
+  filter: blur(0px);
+}
+
+.btn:hover a::before,
+.btn:hover button::before {
+  transform: skewX(45deg) translate(200px);
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 10px;
+  background: rgba(30, 255, 69, 0.7);
+  box-shadow: 0 0 5px rgba(30, 255, 69, 0.7), 0 0 15px rgba(30, 255, 69, 0.7),
+    0 0 30px rgba(30, 255, 69, 0.7), 0 0 60px rgba(30, 255, 69, 0.7);
+}
+
+.btn::before {
+  bottom: -5px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.btn::after {
+  top: -5px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+/* Main style end __________________________________*/
+
+@import 'section/_header';
+@import 'section/_intro';
+@import 'section/_game';
+@import 'section/_result';
+@import 'section/_gallery';
+@import 'section/_footer';
